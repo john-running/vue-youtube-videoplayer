@@ -32,7 +32,6 @@ export default {
     methods: {
         // same as onTermChange: function() {} (es6 syntax)
         onTermChange(searchTerm) {
-            console.log(searchTerm)
             //initiate search for videos from youtube api
             axios.get('https://www.googleapis.com/youtube/v3/search', {
                 params: {
